@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>survey-form.freecodecamp.rocks/</title>
-   <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>survey-form.freecodecamp.rocks/</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-   <h1 id="title">freeCodeCamp Survey Form</h1>
-   <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Nome<input id="name" type="text" placeholder="Nome Completo"/></label>
+      <label id="email-label">E-mail<input id="email" type="email" placeholder="E-mail Pessoal" required /></label>
+      <label id="number-label">Idade<input id="number" type="number" min="15" max="70" placeholder="Idade Atual" required/></label>
+    </fieldset>
+    <fieldset>
+      <select id="dropdowm">
+         <option value="">
+            <!-- primeira opção -->
+         </option>
+         <option value="">
+         <!-- segunda opção -->
+         </option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <input type="radio" name="opcao">
+      <input type="radio" name="opcao">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" value="checkbox 1">
+      <input type="checkbox" value="checkbox 2">
+      <input type="checkbox" value="checkbox 3">
+    </fieldset>
+    <fieldset>
+      <label>Comentarios adicionais: <input type="textarea"></label>
+    </fieldset>
+    <fieldset>
+      <input id="submit" type="submit">
+    </fieldset>
+  </form>
 </body>
+
 </html>
