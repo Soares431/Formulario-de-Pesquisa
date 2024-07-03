@@ -1,0 +1,89 @@
+body {
+   width: 100%;
+   margin: 0;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   background-color: #1b1b32;
+}
+
+h1 {
+   font-size: 30px;
+}
+
+p {
+   font-size: 28px;
+}
+
+h1,
+p {
+   color: aliceblue;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+   background-color: #7d7d81;
+   width: 80vw;
+   max-width: 750px;
+   min-width: 300px;
+   margin: 0 auto;
+   padding-bottom: 2em;
+   border-radius: 2.5%;
+}
+
+fieldset {
+   border: none;
+}
+
+fieldset:last-of-type {
+   border-top: 1px solid;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#Additional_comments {
+   display: block;
+   margin: 0.5rem 0;
+}
+
+
+/* label {
+   display: block;
+   margin: 0.5rem 0;
+} */
+
+input,
+textarea,
+select {
+   margin: 10px 0 0 0;
+   width: 100%;
+   min-height: 2em;
+}
+
+input,
+textarea {
+   background-color: #0a0a23;
+   border: 1px solid #0a0a23;
+   color: #ffffff;
+}
+d
+.inline {
+   display: block;
+   width: unset;
+   margin: 0 0.5em 0 0;
+   /* vertical-align: middle; */
+}
+
+
+input[id="submit"] {
+   display: block;
+   width: 30%;
+   margin: 1em auto;
+   height: 2em;
+   font-size: 1.1rem;
+   background-color: #3b3b4f;
+   color: aliceblue;
+   min-width: 200px;
+   border: 3px;
+}

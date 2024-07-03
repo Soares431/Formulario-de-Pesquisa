@@ -8,38 +8,76 @@
 </head>
 
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <h1 id="title">Formulario</h1>
+  <p id="description">Formulario Simples</p>
   <form id="survey-form">
     <fieldset>
-      <label id="name-label">Nome<input id="name" type="text" placeholder="Nome Completo"/></label>
-      <label id="email-label">E-mail<input id="email" type="email" placeholder="E-mail Pessoal" required /></label>
-      <label id="number-label">Idade<input id="number" type="number" min="15" max="70" placeholder="Idade Atual" required/></label>
+      <label id="name-label" for="name">Nome</label>
+      <input id="name" type="text" placeholder="Nome Completo" required/>
+      <label id="email-label" for="email">E-mail</label>
+      <input id="email" type="email" placeholder="E-mail Pessoal" required />
+      <label id="number-label" for="number">Idade</label>
+      <input id="number" type="number" min="15" max="100" placeholder="Idade Atual" required />
     </fieldset>
     <fieldset>
-      <select id="dropdowm">
-         <option value="">
-            <!-- primeira opção -->
-         </option>
-         <option value="">
-         <!-- segunda opção -->
-         </option>
-      </select>
+      <legend>Genero</legend>
+        <input type="radio" name="genero" value="feminino" class="inline">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" value="masculino"  class="inline">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" value="outro"  class="inline">
+        <label for="outro">Outro</label>
     </fieldset>
     <fieldset>
-      <input type="radio" name="opcao">
-      <input type="radio" name="opcao">
+      <label for="dropdowm">Estado
+        <select id="dropdowm">
+          <option value="">(Selecione Uma Opção)</option>
+          <option value="1">Acre</option>
+          <option value="2">Alagoas</option>
+          <option value="3">Amapá</option>
+          <option value="4">Amazonas</option>
+          <option value="5">Bahia</option>
+          <option value="6">Ceará</option>
+          <option value="7">Distrito Federal</option>
+          <option value="8">Espírito Santo</option>
+          <option value="9">Goiás</option>
+          <option value="10">Maranhão</option>
+          <option value="11">Mato Grosso</option>
+          <option value="12">Mato Grosso do Sul</option>
+          <option value="13">Minas Gerais</option>
+          <option value="14">Pará</option>
+          <option value="15">Paraíba</option>
+          <option value="16">Paraná</option>
+          <option value="17">Pernambuco</option>
+          <option value="18">Piauí</option>
+          <option value="19">Rio de Janeiro</option>
+          <option value="20">Rio Grande do Norte</option>
+          <option value="21">Rio Grande do Sul</option>
+          <option value="22">Rondônia</option>
+          <option value="23">Roraima</option>
+          <option value="24">Santa Catarina</option>
+          <option value="25">São Paulo</option>
+          <option value="26">Sergipe</option>
+          <option value="27">Tocantins</option>
+        </select>
+      </label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Ocupação</legend>
+      <label for="trabalho">Trabalho</label>
+      <input type="checkbox" value="trabalho">
+      <label for="estudo">Estudo</label>
+      <input type="checkbox" value="estudo">
+      <label for="nda">N.D.A</label>
+      <input type="checkbox" value="nda">
     </fieldset>
     <fieldset>
-      <input type="checkbox" value="checkbox 1">
-      <input type="checkbox" value="checkbox 2">
-      <input type="checkbox" value="checkbox 3">
+      <label for="Additional_comments">Comentários adicionais</label>
+      <input id="Additional_comments" name="Additional_comments" type="textarea" rows="3" cols="30" placeholder="Outras informações sobre você">
     </fieldset>
     <fieldset>
-      <label>Comentarios adicionais: <input type="textarea"></label>
-    </fieldset>
-    <fieldset>
-      <input id="submit" type="submit">
+      <input id="submit" type="button" value="Enviar">
     </fieldset>
   </form>
 </body>
